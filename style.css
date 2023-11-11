@@ -1,0 +1,22 @@
+table {
+    width: 100%;
+  }
+  
+  th, td {
+    width: 20%;
+    text-align: left; /* Juster til din ønskede tekstjustering */
+    padding: 8px; /* Juster til din ønskede polstring */
+  }
+  
+  tr {
+    height: 10%;
+  }
+  
+  /* Optional: Sæt baggrundsfarve for hele tabellen */
+  table {
+    background-color: powderblue;
+  }
+  body{
+    background-color: rgb(45, 51, 133);
+  }
+  
