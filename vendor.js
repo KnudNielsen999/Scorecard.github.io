@@ -43,5 +43,5 @@ function tilføjRunde() {
       sum4 += parseFloat(tabel.rows[i].cells[3].children[0].value)|| 0;
       sum5 += parseFloat(tabel.rows[i].cells[4].children[0].value)|| 0;
     }
-    alert('Sum af kolonne 1:'+sum1+'\nSum af kolonne 2:'+sum2+'\nSum af kolonne 3:'+sum3+'\nSum af kolonne 4:'+sum4+'\nSum af kolonne 5:'+sum5);
+    alert('Point Britta:  '+sum1+'\nPoint Knud:  '+sum2+'\nPoint Maria:  '+sum3+'\nPoint Jonas:  '+sum4+'\nPoint Michael:  '+sum5);
   }
