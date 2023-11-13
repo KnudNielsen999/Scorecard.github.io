@@ -43,3 +43,13 @@ table {
     font-size: 40px;
   }
   
+
+  #customHeading {
+    background-color: #ba91aa;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+  }
+
+
