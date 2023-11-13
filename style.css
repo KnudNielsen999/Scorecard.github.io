@@ -6,8 +6,8 @@ table {
     width: 20%;
     text-align: left; /* Juster til din ønskede tekstjustering */
     padding: 8px; /* Juster til din ønskede polstring */
-    font-size: 18px;
-    background-color: rgb(93, 94, 90);
+    font-size: 25px;
+    background-color: rgb(138, 140, 133);
   }
   
   tr {
@@ -17,26 +17,29 @@ table {
   
   /* Optional: Sæt baggrundsfarve for hele tabellen */
   table {
-    background-color: powderblue;
+    background-color: rgb(61, 160, 173);
   }
   body{
-    background-color: rgb(69, 71, 100);
+    background-color: rgb(102, 168, 156);
   }
   button{
-    width: 20%;
-    height: 20%;
+    width: 30%;
+    height: 30%;
     padding: 15px;
-    background-color: blue;
+    font: bold;
+    font-size: 25px;
+    background-color: rgb(155, 165, 157);
   }
   input{
     width: 80%;
     padding: 10px;
     text-align: left;
-    background-color: rgb(96, 134, 97);
+    font-size: 18px;
+    background-color: rgb(136, 148, 136);
 
   }
   h2{
-    color: green;
+    color: rgb(153, 208, 144);
     font-size: 40px;
   }
   
