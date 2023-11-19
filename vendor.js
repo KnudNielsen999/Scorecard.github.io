@@ -44,50 +44,23 @@ function tilføjRunde() {
       sum5 += parseFloat(tabel.rows[i].cells[4].children[0].value)|| 0;
     }
     alert('Point Britta:  '+sum1+'\nPoint Knud:  '+sum2+'\nPoint Maria:  '+sum3+'\nPoint Jonas:  '+sum4+'\nPoint Michael:  '+sum5);
-    if (sum1 >= 500) {
-      //alert('Congratulations, Britta! You have won!');  
-      vinder("Britta",sum1)
-     }
-
-  if (sum2 >= 500) {
-      //alert('Congratulations, Knud! You have won!');
-      vinder("Knud",sum2)
   }
 
-  if (sum3 >= 500) {
-      //alert('Congratulations, Maria! You have won!');
-      vinder("Maria",sum3)
+  // Opret et talegenkendelsesobjekt
+var recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+
+// Lyt efter resultater fra talegenkendelse
+recognition.onresult = function(event) {
+  var transcript = event.results[0][0].transcript.toLowerCase();
+
+  // Tjek for specifikke kommandoer
+  if (transcript.includes('hi')){// && transcript.includes('tur')) {
+    // Implementer logik for at skifte tur til Britta
+   // console.log('Britta, det er din tur!');
+    // ... (implementer den nødvendige logik her)
+    tilføjRunde();
   }
+};
 
-  if (sum4 >= 500) {
-      //alert('Congratulations, Jonas! You have won!');
-      vinder("Jonas",sum4)
-  }
-
-  if (sum5 >= 500) {
-      //alert('Congratulations, Michael! You have won!');
-      vinder("Michael",sum5)
-  }
-}
-
-function vinder(navn,point){
-  var customDialog = document.getElementById("customDialog");
-
-        // Opret et h1-element
-        var h1Element = document.createElement("h1");
-        h1Element.innerText = "Tillykke!  "+navn+"  du fik :"+point;
-        h1Element.setAttribute("id", "customHeading");
-
-        // Tilføj h1-elementet til .custom-dialog
-        customDialog.appendChild(h1Element);
-
-}
-
-
-
-
-
-
-
-
-  
+// Start talegenkendelse
+recognition.start();
