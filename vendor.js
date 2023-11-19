@@ -54,7 +54,7 @@ recognition.onresult = function(event) {
   var transcript = event.results[0][0].transcript.toLowerCase();
 
   // Tjek for specifikke kommandoer
-  if (transcript.includes('hi')){// && transcript.includes('tur')) {
+  if (transcript.includes('hej') && transcript.includes('din tur')) {
     // Implementer logik for at skifte tur til Britta
    // console.log('Britta, det er din tur!');
     // ... (implementer den nødvendige logik her)
