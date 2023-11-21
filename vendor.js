@@ -26,6 +26,8 @@ function tilføjRunde() {
   var input5 = document.createElement("input");
   input5.type = "number";
   celle5.appendChild(input5);
+
+  opsummere();
 }
 
 function opsummere() {
@@ -43,7 +45,13 @@ function opsummere() {
     sum4 += parseFloat(tabel.rows[i].cells[3].children[0].value)|| 0;
     sum5 += parseFloat(tabel.rows[i].cells[4].children[0].value)|| 0;
   }
-  alert('Point Britta:  '+sum1+'\nPoint Knud:  '+sum2+'\nPoint Maria:  '+sum3+'\nPoint Jonas:  '+sum4+'\nPoint Michael:  '+sum5);
+  //alert('Point Britta:  '+sum1+'\nPoint Knud:  '+sum2+'\nPoint Maria:  '+sum3+'\nPoint Jonas:  '+sum4+'\nPoint Michael:  '+sum5);
+   document.getElementById("Britta").innerHTML=sum1;
+   document.getElementById("Knud").innerHTML=sum2;
+   document.getElementById("Maria").innerHTML=sum3;
+   document.getElementById("Jonas").innerHTML=sum4;
+   document.getElementById("Michael").innerHTML=sum5;
+
   if (sum1 >= 500) {
     //alert('Congratulations, Britta! You have won!');  
     vinder("Britta",sum1)

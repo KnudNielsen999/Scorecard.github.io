@@ -20,15 +20,15 @@ table {
   background-color: rgb(61, 160, 173);
 }
 body{
-  background-color: rgb(102, 168, 156);
+  background-color: rgb(107, 112, 111);
 }
 button{
-  width: 30%;
-  height: 30%;
-  padding: 15px;
+  width: 10%;
+  height: 10%;
+  padding: 1%;
   font: bold;
   font-size: 25px;
-  background-color: rgb(155, 165, 157);
+  background-color: rgb(30, 89, 42);
 }
 input{
   width: 80%;
@@ -39,7 +39,7 @@ input{
 
 }
 h2{
-  color: rgb(153, 208, 144);
+  color: rgb(222, 68, 7);
   font-size: 40px;
 }
 
@@ -51,4 +51,21 @@ h2{
   padding: 20px;
   text-align: center;
 }
+
+#Britta{
+  color: red;
+}
+#Knud{
+  color: blue;
+}
+#Maria{
+  color: green;
+}
+#Jonas{
+  color:black;
+}
+#Michael{
+  color: rgb(183, 0, 255);
+}
+
 

@@ -4,19 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Score card 500 Rommy</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    
     <div class="spilStyring">
-        <br>
-      <button onclick="tilføjRunde()">tilføj ny runde</button>
-      <button onclick="opsummere()">opsummer point</button>
+      <br>
+       <h2>Scorecard for 500 Rummy</h2>
+ 
+      <button onclick="tilføjRunde()">Tilføj ny runde</button>
+      <button onclick="opsummere()">Opsummer point</button>
     </div>
-<div class="indtastNavne">
+    <br />
+    <div class="indtastNavne">
       <table id="indtastSpillerNavn" border="1">
-        <h2>Scorecard for 500 Rummy</h2>
-        
+       
         <tr>
           <th>Spiller 1</th>
           <th>Spiller 2</th>
@@ -35,9 +36,19 @@
     </div>
     <table id="minTabel" border="1"></table>
 
-    <div class="custom-dialog" id="customDialog">
-      
+    <div class="OpdaterePoint">
+      <table border="1">
+        <tr>
+          <td id="Britta"></td>
+          <td id="Knud"></td>
+          <td id="Maria"></td>
+          <td id="Jonas"></td>
+          <td id="Michael"></td>
+        </tr>
+      </table>
     </div>
+
+    <div class="custom-dialog" id="customDialog"></div>
 
     <script src="vendor.js"></script>
   </body>
