@@ -40,8 +40,9 @@ input{
 
 }
 h2{
-  color: rgb(222, 68, 7);
-  font-size: 40px;
+  color: black;
+  font-size: 50px;
+  text-align: center;
 }
 
 
